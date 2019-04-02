@@ -5,8 +5,79 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="http://placehold.it/191x39" width="191" height="39" alt="Логотип Cat Energy">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle">Открыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item"><a>Главная</a></li>
+          <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
+          <li class="site-list__item"><a href="form.html">Подбор программы</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <main class="page-main">
+      <section class="first-screen">
+        <h1 class="first-screen__title">Функциональное питание для котов</h1>
+        <b class="first-screen__slogan">Занялся собой? Займись котом!</b>
+        <img class="first-screen__img-product" src="http://placehold.it/280x270" width="280" height="270" alt="Изображение продукта">
+        <a href="form.html" class="first-screen__choose-program button">Подобрать программу</a>
+      </section>
 
+      <section class="categories">
+        <article class="categories__item categories-item"> <!-- ??? -->
+          <h3 class="categories-item__title">Похудение</h3>
+          <p class="categories-item__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <a href="#" class="categories-item__catalog-link">Каталог Slim</a>
+        </article>
+        <article class="categories__item categories-item"> <!-- ??? -->
+          <h3 class="categories-item__title">Набор массы</h3>
+          <p class="categories-item__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+          <a href="#" class="categories-item__catalog-link">Каталог Pro</a>
+        </article>
+      </section>
+
+      <section class="advantages"> <!-- Правильно ли тут именование? И как можно сделать лучше, лаконичнее? -->
+        <h2 class="advantages__title">Как это работает</h2>
+        <ul class="advantages__list advantages-list">
+          <li class="advantages-list__item advantages-item">
+            <p class="advantages-item__description">Функциональное питание содержит только полезные питательные вещества.</p>
+          </li>
+          <li class="advantages-list__item advantages-item">
+            <p class="advantages-item__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+          </li>
+          <li class="advantages-list__item advantages-item">
+            <p class="advantages-item__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
+          </li>
+          <li class="advantages-list__item advantages-item">
+            <p class="advantages-item__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Здесь будет блок Живой пример и Контакты -->
+    </main>
+
+    <footer class="page-footer">
+      <a class="page-footer__logo">
+        <img class="page-footer__logo-image" src="http://placehold.it/128x24" width="128" height="24" alt="Логотип Cat Energy">
+      </a>
+      <div class="page-footer__socials footer-socials">
+        <ul class="footer-socials__list">
+          <li class="footer-socials__item footer-socials__item--vk"><a href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+          <li class="footer-socials__item footer-socials__item--inst"><a href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+          <li class="footer-socials__item footer-socials__item--fb"><a href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright footer-copyright">
+        <b class="footer-copyright__developer-name">HTML Academy</b>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="footer-copyright__developer-logo">
+          <img class="footer-copyright__developer-logo-image" src="http://placehold.it/27x34" width="27" height="34" alt="Логотип HTML Academy">
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
