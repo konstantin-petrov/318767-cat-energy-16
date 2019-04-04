@@ -20,7 +20,79 @@
     </header>
 
     <main class="page-main">
-            <!-- Здесь будет Форма -->
+      <h1 class="page-main__title">Подбор программы</h1>
+      <p class="page-main__subtittle">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <form class="page-main__form main-form" action="https://echo.htmlacademy.ru/" method="GET"> <!-- не знаю как в этой форме лучше сделать с классами, чтобы по минимуму в стилях потом писать -->
+        <p class="main-form__name form-name">
+          <label class="form-name__label" for="name">Имя:*</label>
+          <input class="form-name__field" type="text" id="name" name="name" value="Барсик" required>
+        </p>
+        <p class="main-form__weight form-weight">
+          <label class="form-weight__label" for="weight">Вес (кг):*</label>
+          <input class="form-weight__field" type="text" id="weight" name="weight" value="7" required>
+        </p>
+        <p class="main-form__age form-age">
+          <label class="form-age__label" for="age">Возраст (лет):*</label>
+          <input class="form-age__field" type="text" id="age" name="age" value="7">
+        </p>
+        <p>
+          <input type="radio" id="lose-weight" name="purpose" value="lose-weight">
+          <label for="lose-weight">Похудение</label>
+        </p>
+        <p>
+          <input type="radio" id="weight-gain" name="purpose" value="weight-gain">
+          <label for="weight-gain">Набор массы</label>
+        </p>
+        <p>
+          <input type="radio" id="dont-know" name="purpose" value="dont-know">
+          <label for="dont-know">Не знаю (нужен ваш совет)</label>
+        </p>
+        <fieldset>
+          <legend>Контактные данные (владельца кота)</legend>
+          <p>
+            <label for="name">E-mail:*</label>
+            <input type="email" id="email" name="email" value="kuklachev@gmail.com" required>
+          </p>
+          <p>
+            <label for="phone">Телефон:*</label>
+            <input type="tel" id="phone" name="phone" value="8 (960) 900-60-90" required>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Комментарий</legend>
+          <p>
+            <label for="comment">Комментарий:*</label>
+            <textarea id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Дополнительно</legend>
+          <p>
+            <input type="checkbox" id="sugar" name="sugar" checked>
+            <label for="sugar">Сахарозаменитель</label>
+          </p>
+          <p>
+            <input type="checkbox" id="water" name="water">
+            <label for="water">Питьевая вода</label>
+          </p>
+          <p>
+            <input type="checkbox" id="milk" name="milk">
+            <label for="milk">Молоко</label>
+          </p>
+          <p>
+            <input type="checkbox" id="vitamins" name="vitamins">
+            <label for="vitamins">Витамины</label>
+          </p>
+        </fieldset>
+        <input type="submit" value="Отправиль заявку" class="button">
+      </form>
+      <small>* — Обязательные поля</small>
+
+      <section class="contacts">
+        <p class="contacts__partnership">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+        <img class="contacts__map" src="http://placehold.it/320x360" width="320" height="360" alt="Магазин на карте">
+      </section>
     </main>
 
     <footer class="page-footer">
