@@ -1,0 +1,30 @@
+.categories {
+
+}
+
+.categories__item {
+  background-color: $bg-grey;
+}
+
+.categories__title {
+  @include font-oswald;
+  text-transform: uppercase;
+  color: #111111;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37.02px;
+}
+
+.categories__description {
+
+}
+
+.categories__link {
+  @include font-oswald;
+  text-transform: uppercase;
+  color: #111111;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+
+}
