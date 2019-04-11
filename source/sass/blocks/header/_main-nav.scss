@@ -14,5 +14,15 @@
   line-height: 20px;
   text-transform: uppercase;
   font-weight: bold;
+  text-align: center;
+}
+
+.site-list__item {
+  padding: 20px 0;
+  border-top: 2px solid $bg-grey;
+}
+
+.site-list__item:last-child {
+  border-bottom: 2px solid $bg-grey;
 }
 
