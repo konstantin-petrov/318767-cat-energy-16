@@ -1,7 +1,3 @@
-.extra {
-
-}
-
 .extra__title {
   @include font-oswald;
   color: #111111;
@@ -53,7 +49,7 @@
 .extra__promo {
   min-width: 280px;
   min-height: 289px;
-  background-image: url(../../../img/gift-photo-mobile@1x.jpg);
+  background-image: url("../../../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
 }
 

@@ -1,6 +1,7 @@
 .first-screen {
-  background-image: url(../../img/index-background-mobile@1x.jpg);
+  background-image: url("../../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
+
   @include font-oswald;
 }
 
@@ -23,5 +24,3 @@
   text-transform: uppercase;
   text-align: center;
 }
-
-

@@ -3,6 +3,7 @@
   width: 280px;
   min-height: 40px;
   background-color: $green;
+
   @include font-oswald;
   text-align: center;
   text-transform: uppercase;

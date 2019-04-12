@@ -1,15 +1,7 @@
-.main-nav {
-
-}
-
-.main-nav__toggle {
-
-}
-
 .main-nav__list {
   @include list-reset;
   color: #111111;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
@@ -25,4 +17,3 @@
 .site-list__item:last-child {
   border-bottom: 2px solid $bg-grey;
 }
-
