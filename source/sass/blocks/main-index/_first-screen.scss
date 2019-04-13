@@ -1,0 +1,26 @@
+.first-screen {
+  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+
+  @include font-oswald;
+}
+
+.first-screen__title {
+  padding-top: 30px;
+  color: #ffffff;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.first-screen__slogan {
+  padding-bottom: 30px;
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}

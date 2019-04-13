@@ -1,0 +1,25 @@
+.main-form {
+  @include font-oswald;
+  color: #222222;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.main-form__legend {
+  color: #111111;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.main-form__submit {
+  border: none;
+  background: transparent;
+}
+
+.main-form__required {
+  display: block;
+  line-height: 16px;
+  text-align: center;
+}

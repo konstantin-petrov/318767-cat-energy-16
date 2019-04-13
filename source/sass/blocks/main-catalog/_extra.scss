@@ -1,0 +1,62 @@
+.extra__title {
+  @include font-oswald;
+  color: #111111;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.extra__list {
+  @include list-reset;
+}
+
+.extra__item {
+  border-top: 2px solid $bg-grey;
+}
+
+.extra__item:last-child {
+  border-bottom: 2px solid $bg-grey;
+}
+
+.extra__name {
+  @include font-oswald;
+  color: #111111;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.extra__table {
+  font-size: 14px;
+  line-height: 14px;
+  width: 100%;
+}
+
+.extra-table__count {
+  text-align: left;
+}
+
+.extra-table__price {
+  text-align: right;
+}
+
+.extra__order {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.extra__promo {
+  min-width: 280px;
+  min-height: 289px;
+  background-image: url("../../../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.extra-promo__offer {
+  width: 160px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+}

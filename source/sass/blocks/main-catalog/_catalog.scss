@@ -1,0 +1,30 @@
+.catalog__title {
+  @include font-oswald;
+  color: #111111;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  border-bottom: 1px solid $bg-grey;
+  border-top: 1px solid $bg-grey;
+  padding-bottom: 35px;
+  padding-top: 20px;
+}
+
+.catalog__list {
+  @include list-reset;
+}
+
+.more-items__title {
+  @include font-oswald;
+  color: #111111;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.more-items__subtitle {
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}

@@ -1,0 +1,16 @@
+.page-main__title {
+  @include font-oswald;
+  color: #111111;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: normal;
+}
+
+.page-main__subtitle {
+  @include font-oswald;
+  color: #111111;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+}

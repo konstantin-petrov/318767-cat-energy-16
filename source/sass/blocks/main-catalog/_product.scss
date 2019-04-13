@@ -1,0 +1,29 @@
+.product {
+  border-bottom: 1px solid $bg-grey;
+}
+
+.product__name {
+  @include font-oswald;
+  color: #111111;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.product__property {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.product-table__header {
+  text-align: left;
+  font-weight: normal;
+}
+
+.product-table__description {
+  text-align: right;
+}
+
+.product__order {
+  margin-bottom: 25px;
+}

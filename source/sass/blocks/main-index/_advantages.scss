@@ -1,0 +1,11 @@
+.advantages__title {
+  @include font-oswald;
+  color: #111111;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+}
+
+.advantages__list {
+  @include list-reset;
+}
