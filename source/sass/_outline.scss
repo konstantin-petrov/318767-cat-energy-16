@@ -1,0 +1,7 @@
+.page-header__logo-image,
+.main-nav__list,
+.site-list__item,
+.site-list__item a {
+  @include no-outline;
+}
+

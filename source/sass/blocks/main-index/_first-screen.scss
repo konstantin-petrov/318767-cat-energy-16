@@ -3,6 +3,12 @@
   background-repeat: no-repeat;
 
   @include font-oswald;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.first-screen__wrapper {
+  margin: 0 20px;
 }
 
 .first-screen__title {
@@ -23,4 +29,58 @@
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .first-screen {
+    background-image: none;
+    width: $tablet-width;
+  }
+
+  .first-screen__title {
+    width: 420px;
+    color: #111111;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  .first-screen__slogan {
+    width: 300px;
+    color: #111111;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+
+  .first-screen__img-product {
+    width: 709px;
+  }
+
+  .first-screen__choose-program {
+    position: absolute;
+    top: 400px;
+
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .first-screen {
+    width: $desktop-width;
+    background-image: url("../../../img/index-background-desktop@1x.jpg");
+    background-position: 100%;
+    height: 696px;
+  }
+
+  .first-screen__wrapper {
+    width: 50%;
+  }
+
+  .first-screen__img-product {
+    width: 552px;
+    position: absolute;
+    top: 25%;
+    left: 41%;
+  }
 }

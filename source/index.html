@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/outline.css">
   </head>
   <body>
     <header class="page-header">
@@ -11,7 +12,7 @@
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип Cat Energy">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle">Открыть меню</button>
+        <button class="main-nav__toggle visually-hidden">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a>Главная</a></li>
           <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
@@ -22,10 +23,12 @@
 
     <main class="page-main">
       <section class="first-screen">
-        <h1 class="first-screen__title">Функциональное питание для котов</h1>
-        <b class="first-screen__slogan">Занялся собой? Займись котом!</b>
-        <img class="first-screen__img-product" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Изображение продукта">
-        <a href="form.html" class="first-screen__choose-program button">Подобрать программу</a>
+        <div class="first-screen__wrapper">
+          <h1 class="first-screen__title">Функциональное питание для котов</h1>
+          <b class="first-screen__slogan">Занялся собой? Займись котом!</b>
+          <img class="first-screen__img-product" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Изображение продукта">
+          <a href="form.html" class="first-screen__choose-program button">Подобрать программу</a>
+        </div>
       </section>
 
       <section class="categories">
