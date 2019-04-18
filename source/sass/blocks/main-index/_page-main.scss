@@ -1,3 +1,8 @@
+.page-main {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .page-main__title {
   @include font-oswald;
   color: #111111;
@@ -13,4 +18,16 @@
   line-height: 18px;
   font-weight: normal;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    width: $desktop-width;
+  }
 }

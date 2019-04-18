@@ -7,6 +7,8 @@
 
 .page-header__logo {
   height: 65px;
+  width: 320px;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -19,8 +21,4 @@
     width: 192px;
     height: 60px;
   }
-}
-
-@media (min-width: $desktop-width) {
-
 }

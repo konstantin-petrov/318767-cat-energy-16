@@ -2,8 +2,39 @@
   background-color: $bg-grey;
 }
 
+.page-footer__logo {
+  display: block;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page-footer__logo-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.page-footer__socials {
+  width: 320px;
+  margin: 0 auto;
+  min-height: 60px;
+}
+
+.page-footer__copyright {
+  width: 320px;
+  margin: 0 auto;
+  min-height: 75px;
+}
+
 .footer-copyright__developer-name {
   font-size: 16px;
   line-height: 16px;
   font-weight: normal;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    min-height: 150px;
+    align-items: center;
+  }
 }

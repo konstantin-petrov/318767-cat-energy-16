@@ -12,19 +12,36 @@
 
 .catalog__list {
   @include list-reset;
+
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-.more-items__title {
-  @include font-oswald;
-  color: #111111;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
+@media (min-width: $tablet-width) {
+  .catalog__title {
+    font-size: 60px;
+  }
+
+  .catalog__list {
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
-.more-items__subtitle {
-  font-size: 12px;
-  line-height: 16px;
-  text-align: center;
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    margin-left: 110px;
+    margin-right: 110px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .product {
+    display: block;
+    width: 245px;
+  }
 }

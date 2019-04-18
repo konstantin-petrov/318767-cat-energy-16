@@ -1,3 +1,91 @@
+/* editorconfig-disable */
+body > *,
+body > * > *,
+body > * > * > *,
+body > * > * > * > *,
+body > * > * > * > * > * {
+  position: relative;
+}
+
+body > *::before,
+body > * > *::before,
+body > * > * > *::before,
+body > * > * > * > *::before,
+body > * > * > * > * > *::before {
+  content: "."attr(class);
+
+  position: absolute;
+  top: 2px;
+  left: 2px;
+
+  height: 24px;
+  padding: 2px 5px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Courier New", monospace;
+  white-space: nowrap;
+}
+
+body > * {
+  background: rgba(128, 255, 128, 0.25);
+  background-clip: content-box;
+  outline: 3px solid green;
+  outline-offset: -3px;
+}
+
+body > *::before {
+  color: white;
+  background: green;
+}
+
+body > * > * {
+  background: rgba(255, 45, 82, 0.2);
+  background-clip: content-box;
+  outline: 3px solid rgba(255, 45, 82, 0.9);
+  outline-offset: -3px;
+}
+
+body > * > *::before {
+  color: white;
+  background: rgb(255, 45, 82);
+}
+
+body > * > * > * {
+  background: rgba(173, 216, 230, 0.2);
+  background-clip: content-box;
+  outline: 3px solid rgba(173, 216, 230, 0.9);
+  outline-offset: -3px;
+}
+
+body > * > * > *::before {
+  color: black;
+  background: lightblue;
+}
+
+body > * > * > * > * {
+  background: rgba(234, 255, 45, 0.2);
+  background-clip: content-box;
+  outline: 3px solid rgba(234, 255, 45, 0.9);
+  outline-offset: -3px;
+}
+
+body > * > * > * > *::before {
+  color: black;
+  background: rgb(234, 255, 45);
+}
+
+body > * > * > * > * > * {
+  outline: 3px solid violet;
+  outline-offset: -3px;
+}
+
+body > * > * > * > * > *::before {
+  color: black;
+  background: violet;
+}
+
 .page-header__logo-image,
 .main-nav__list,
 .site-list__item,
@@ -5,3 +93,36 @@
   @include no-outline;
 }
 
+.categories__title,
+.categories__description,
+.categories__link {
+  @include no-outline;
+}
+
+.advantages__list,
+.advantages__description {
+  @include no-outline;
+}
+
+.contacts__partnership,
+.contacts__address,
+.contacts__map,
+.page-footer__logo-image,
+.footer-socials__list,
+.footer-socials__item,
+.footer-copyright__developer-name,
+.footer-copyright__developer-logo {
+  @include no-outline;
+}
+
+.product__image,
+.product__name,
+.product__property,
+.product-table__header,
+.product-table__description,
+.product__order,
+.more-items__title,
+.more-items__subtitle,
+.more-items__show-all {
+  @include no-outline;
+}
