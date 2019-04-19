@@ -34,7 +34,15 @@
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     display: flex;
+    width: $tablet-width;
+    margin: 0 auto;
     min-height: 150px;
     align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    width: $desktop-width;
   }
 }
