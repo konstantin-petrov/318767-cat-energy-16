@@ -126,3 +126,8 @@ body > * > * > * > * > *::before {
 .more-items__show-all {
   @include no-outline;
 }
+
+.example-result__value,
+.example-result__description {
+  @include no-outline;
+}
