@@ -27,3 +27,26 @@
 .product__order {
   margin-bottom: 25px;
 }
+
+.product__flex-wrap {
+  display: flex;
+}
+
+.more-items {
+  min-height: 210px;
+}
+
+.more-items__title {
+  @include font-oswald;
+  color: #111111;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.more-items__subtitle {
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}

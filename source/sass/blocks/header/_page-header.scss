@@ -1,0 +1,24 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+
+  height: 260px;
+}
+
+.page-header__logo {
+  height: 65px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    flex-direction: row;
+    height: 60px;
+  }
+
+  .page-header__logo {
+    width: 192px;
+    height: 60px;
+  }
+}

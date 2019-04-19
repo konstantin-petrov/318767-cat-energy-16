@@ -9,6 +9,24 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.example__story {
+  margin-left: 20px;
+  margin-right: 25px;
+}
+
+.example__flex-wrap {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: space-between;
+}
+
+.example__result {
+  width: 124px;
 }
 
 .example-result__value {
@@ -44,4 +62,24 @@
   background: transparent;
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .example__title {
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 60px;
+  }
+
+  .example__story {
+    margin-left: 30px;
+    margin-right: 60px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__flex-wrap {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 }

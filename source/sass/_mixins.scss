@@ -7,3 +7,12 @@
 @mixin font-oswald {
   font-family: "Oswald", "Arial", sans-serif;
 }
+
+@mixin no-outline() {
+  outline: none;
+  background: transparent;
+
+  &::before {
+    display: none;
+  }
+}

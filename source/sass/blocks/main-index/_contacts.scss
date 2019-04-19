@@ -1,5 +1,12 @@
+.contacts {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .contacts__partnership {
   @include font-oswald;
+  margin-left: 20px;
+  margin-right: 20px;
   color: #111111;
   text-transform: uppercase;
   font-size: 16px;
@@ -7,5 +14,33 @@
 }
 
 .contacts__address {
+  margin-left: 20px;
+  margin-right: 20px;
   line-height: 20px;
+}
+
+.contacts__map {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    width: $tablet-width;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 200px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: absolute;
+    width: 570px;
+    top: 15%;
+    left: 15%;
+    z-index: 1;
+    background-color: #ffffff;
+  }
 }
