@@ -12,7 +12,8 @@
 }
 
 .first-screen__title {
-  padding-top: 30px;
+  margin-top: 0;
+  padding-top: 28px;
   color: #ffffff;
   font-size: 36px;
   line-height: 36px;
@@ -36,12 +37,18 @@
     background-image: none;
   }
 
+  .first-screen__wrapper {
+    margin: 0 30px;
+    position: relative;
+  }
+
   .first-screen__title {
     width: 420px;
     color: #111111;
     font-size: 60px;
     line-height: 60px;
     text-align: left;
+    margin-left: 87px;
   }
 
   .first-screen__slogan {
@@ -51,15 +58,22 @@
     line-height: 20px;
     margin-bottom: 40px;
     text-align: left;
+    margin-left: 88px;
   }
 
   .first-screen__img-product {
-    width: 709px;
+    width: 600px;
   }
 
-  .first-screen__choose-program {
+  .first-screen__wrapper .first-screen__choose-program {
     position: absolute;
-    top: 400px;
+    width: 245px;
+    height: 52px;
+    top: 257px;
+    left: 89px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 50px;
   }
 }
 

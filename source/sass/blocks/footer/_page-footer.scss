@@ -1,11 +1,15 @@
 .page-footer {
+  // background-color: $bg-grey;
+}
+
+.page-footer__wrapper {
   background-color: $bg-grey;
 }
 
 .page-footer__logo {
   display: block;
-  width: 320px;
-  margin: 0 auto;
+  padding-top: 35px;
+  margin-bottom: 20px;
 }
 
 .page-footer__logo-image {
@@ -14,15 +18,57 @@
 }
 
 .page-footer__socials {
-  width: 320px;
+  // width: 320px;
+  // margin: 0 auto;
+}
+
+.footer-socials__list {
+  @include list-reset;
+  width: 280px;
   margin: 0 auto;
-  min-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+}
+
+.footer-socials__item {
+  background-color: #666666;
+  margin-right: 40px;
+
+  &--vk {
+    width: 22px;
+    height: 12px;
+    background: url("../img/icon-vk-mobile.svg") no-repeat;
+  }
+
+  &--inst {
+    width: 16px;
+    height: 16px;
+    background: url("../img/icon-insta-mobile.svg") no-repeat;
+  }
+
+  &--fb {
+    width: 10px;
+    height: 19px;
+    background: url("../img/icon-fb-mobile.svg") no-repeat;
+  }
+}
+
+.footer-socials__item:last-child {
+  margin-right: 0;
 }
 
 .page-footer__copyright {
-  width: 320px;
+  width: 280px;
   margin: 0 auto;
   min-height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer-copyright__developer-name {
@@ -32,12 +78,69 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-footer__wrapper {
+  .page-footer__wrapper .container {
     display: flex;
-    width: $tablet-width;
-    margin: 0 auto;
+    // width: $tablet-width;
+    // margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
     min-height: 150px;
     align-items: center;
+  }
+
+  .page-footer__logo {
+    width: 132px;
+    // outline: 1px solid green;
+    margin: 0;
+    padding: 0;
+  }
+
+  .page-footer__logo-image {
+    margin: 0;
+  }
+
+  .page-footer__socials {
+    // width: 324px;
+    margin-left: 74px;
+    // outline: 1px solid blue;
+  }
+
+  .footer-socials__list {
+    border: none;
+    // margin: 0;
+    padding: 0;
+  }
+
+  .footer-socials__item {
+    margin: 0;
+    padding: 0;
+    margin-right: 28px;
+
+    &--vk {
+      width: 30px;
+      height: 16px;
+      background: url("../img/icon-vk-mobile.svg") no-repeat;
+    }
+
+    &--inst {
+      width: 23px;
+      height: 23px;
+      background: url("../img/icon-insta-mobile.svg") no-repeat;
+    }
+
+    &--fb {
+      width: 14px;
+      height: 28px;
+      background: url("../img/icon-fb-mobile.svg") no-repeat;
+    }
+  }
+
+  .page-footer__copyright {
+    width: 162px;
+    // outline: 1px solid yellow;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
   }
 }
 
