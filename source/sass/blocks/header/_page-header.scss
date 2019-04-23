@@ -1,24 +1,28 @@
 .page-header {
+  position: relative;
   display: flex;
   flex-direction: column;
-
-  height: 260px;
 }
 
 .page-header__logo {
   height: 65px;
   width: 320px;
-  margin: 0 auto;
+  padding-left: 20px;
+  padding-top: 13px;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
     flex-direction: row;
     height: 60px;
+    margin-top: 24px;
+    margin-bottom: 28px;
   }
 
   .page-header__logo {
     width: 192px;
     height: 60px;
+    margin: 0;
+    padding: 0;
   }
 }
