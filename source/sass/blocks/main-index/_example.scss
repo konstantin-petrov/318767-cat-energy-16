@@ -11,22 +11,31 @@
   line-height: 60px;
   margin-left: 20px;
   margin-right: 20px;
+  padding-top: 17px;
+  margin-bottom: 24px;
 }
 
 .example__story {
   margin-left: 20px;
   margin-right: 25px;
+  margin-bottom: 26px;
 }
 
 .example__flex-wrap {
   display: flex;
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom: 34px;
   justify-content: space-between;
 }
 
 .example__result {
+  position: relative;
   width: 124px;
+  border-radius: 3px;
+  border: 1px solid #cdcdcd;
+  text-align: center;
+  padding: 14px 10px;
 }
 
 .example-result__value {
@@ -35,10 +44,17 @@
   text-transform: uppercase;
   font-size: 24px;
   line-height: 24px;
-  text-align: center;
+  font-weight: 400;
 }
 
 .example-result__description {
+  position: absolute;
+  display: block;
+  width: 87px;
+  padding: 0 5px;
+  background-color: $bg-grey;
+  top: 45px;
+  left: 16px;
   font-size: 12px;
   line-height: 12px;
 }
@@ -50,6 +66,11 @@
   font-size: 14px;
   line-height: 20px;
   text-align: center;
+  margin-bottom: 34px;
+}
+
+.example__cat-img {
+  margin-bottom: 28px;
 }
 
 .example__button {

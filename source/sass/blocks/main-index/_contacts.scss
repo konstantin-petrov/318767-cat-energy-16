@@ -31,6 +31,7 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
+    display: none; //временно
     position: absolute;
     width: 570px;
     top: 15%;
