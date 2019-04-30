@@ -1,7 +1,12 @@
+.contacts {
+  display: flex;
+  padding-top: 14px;
+}
+
 .contacts__partnership {
   @include font-oswald;
+  width: 50%;
   margin-left: 20px;
-  margin-right: 20px;
   color: #111111;
   text-transform: uppercase;
   font-size: 16px;
@@ -9,7 +14,7 @@
 }
 
 .contacts__address {
-  margin-left: 20px;
+  width: 50%;
   margin-right: 20px;
   line-height: 20px;
 }
