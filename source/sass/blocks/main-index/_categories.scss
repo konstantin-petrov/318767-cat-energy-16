@@ -66,6 +66,7 @@
 
 .categories__link {
   position: relative;
+
   @include font-oswald;
   text-transform: uppercase;
   color: #111111;
@@ -74,6 +75,16 @@
   line-height: 16px;
   margin-left: 20px;
   padding-right: 58px;
+
+  &:hover::after {
+    background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
+    width: 33px;
+    right: 13px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .categories__link::after {

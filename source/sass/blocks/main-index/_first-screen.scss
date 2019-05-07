@@ -1,6 +1,5 @@
 .first-screen {
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
+  background: no-repeat url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, #64a83b 0%, #64a83b 60%, #ffffff 60%, #ffffff 100%);
 
   @include font-oswald;
   // width: 320px;
@@ -90,9 +89,9 @@
     width: 720px;
     height: 696px;
     top: -115px;
-    right: -69px;
+    left: 50%;
     z-index: -1;
-    background: url("../img/index-background-desktop@1x.jpg");
+    background: no-repeat url("../img/index-background-desktop@1x.jpg"), #64a83b;
   }
 
   .first-screen__title {

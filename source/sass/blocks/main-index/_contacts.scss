@@ -1,6 +1,8 @@
 .contacts {
   display: flex;
   padding-top: 14px;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .contacts__partnership {
@@ -30,18 +32,60 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 200px;
+    padding-bottom: 55px;
+  }
+
+  .contacts__partnership {
+    width: 154px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 25px;
+    padding-top: 45px;
+    padding-left: 71px;
+  }
+
+  .contacts__address {
+    width: 160px;
+    margin: 0;
+    font-size: 16px;
+    text-align: right;
+    padding-top: 49px;
+    margin-right: 72px;
+  }
+
+  .contacts__address span:first-child {
+    display: block;
+    margin-bottom: 22px;
+  }
+
+  .contacts__map {
+    width: 768px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
-    display: none; //временно
     position: absolute;
     width: 570px;
-    top: 15%;
-    left: 15%;
+    top: 90px;
+    left: 20%;
     z-index: 1;
     background-color: #ffffff;
+  }
+
+  .contacts__partnership {
+    width: 154px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .contacts__address {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+  }
+
+  .contacts__map {
+    width: 1440px;
   }
 }
