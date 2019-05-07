@@ -8,8 +8,16 @@
 
 .page-footer__logo {
   display: block;
-  padding-top: 35px;
-  margin-bottom: 20px;
+  padding-top: 46px;
+  margin-bottom: 32px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__logo-image {
@@ -30,36 +38,30 @@
   justify-content: center;
   align-items: center;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 23px;
   border-top: 1px solid #dadada;
   border-bottom: 1px solid #dadada;
 }
 
 .footer-socials__item {
-  background-color: #666666;
   margin-right: 40px;
-
-  &--vk {
-    width: 22px;
-    height: 12px;
-    background: url("../img/icon-vk-mobile.svg") no-repeat;
-  }
-
-  &--inst {
-    width: 16px;
-    height: 16px;
-    background: url("../img/icon-insta-mobile.svg") no-repeat;
-  }
-
-  &--fb {
-    width: 10px;
-    height: 19px;
-    background: url("../img/icon-fb-mobile.svg") no-repeat;
-  }
 }
 
 .footer-socials__item:last-child {
   margin-right: 0;
+}
+
+.footer-socials__icon {
+  fill: #666666;
+
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    fill: #68b738;
+    opacity: 0.3;
+  }
 }
 
 .page-footer__copyright {
@@ -75,6 +77,27 @@
   font-size: 16px;
   line-height: 16px;
   font-weight: normal;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.footer-copyright__developer-logo-image {
+  fill: #666666;
+  width: 40px;
+  height: 42px;
+  margin-right: -7px;
+  padding-top: 3px;
+
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    fill: #68b738;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -86,6 +109,10 @@
     padding-right: 30px;
     min-height: 150px;
     align-items: center;
+  }
+
+  .page-footer__wrapper .contacts {
+    padding: 60px 70px;
   }
 
   .page-footer__logo {
@@ -114,24 +141,23 @@
   .footer-socials__item {
     margin: 0;
     padding: 0;
-    margin-right: 28px;
+    margin-right: 40px;
+  }
 
-    &--vk {
+  .footer-socials__icon {
+    &--vkontakte {
       width: 30px;
       height: 16px;
-      background: url("../img/icon-vk-mobile.svg") no-repeat;
     }
 
-    &--inst {
+    &--instagram {
       width: 23px;
       height: 23px;
-      background: url("../img/icon-insta-mobile.svg") no-repeat;
     }
 
-    &--fb {
+    &--facebook {
       width: 14px;
       height: 28px;
-      background: url("../img/icon-fb-mobile.svg") no-repeat;
     }
   }
 
@@ -145,7 +171,22 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-footer__wrapper {
-    width: $desktop-width;
+  .page-footer {
+    position: relative;
+  }
+
+  .page-footer__wrapper .container {
+    padding-left: 40px;
+    padding-right: 40px;
+    // outline: 1px solid blue;
+    justify-content: space-between;
+  }
+
+  .page-footer__socials {
+    margin: 0;
+  }
+
+  .page-footer__copyright {
+    margin: 0;
   }
 }

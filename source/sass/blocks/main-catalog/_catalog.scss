@@ -5,9 +5,10 @@
   font-weight: 400;
   line-height: 60px;
   border-bottom: 1px solid $bg-grey;
-  border-top: 1px solid $bg-grey;
-  padding-bottom: 35px;
-  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 28px;
+  margin-top: 17px;
+  margin-bottom: 0;
 }
 
 .catalog__list {
@@ -15,11 +16,16 @@
 
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom: 51px;
 }
 
 @media (min-width: $tablet-width) {
   .catalog__title {
     font-size: 60px;
+    padding-left: 30px;
+    padding-top: 28px;
+    border-bottom: none;
+    margin-bottom: 137px;
   }
 
   .catalog__list {
@@ -32,12 +38,18 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog__title {
+    padding-top: 55px;
+    padding-left: 40px;
+  }
+
   .catalog__list {
-    margin-left: 110px;
-    margin-right: 110px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 31px;
   }
 
   .product {
