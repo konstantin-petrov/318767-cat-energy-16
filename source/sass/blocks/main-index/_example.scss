@@ -150,10 +150,6 @@
     justify-content: normal;
   }
 
-  .example__buttons {
-    padding-bottom: 72px;
-  }
-
   .example__result {
     width: 162px;
     padding-bottom: 19px;
@@ -204,6 +200,8 @@
   }
 
   .example__buttons {
+    padding-bottom: 72px;
+
     &::before {
       content: "";
       background-color: #ffffff;

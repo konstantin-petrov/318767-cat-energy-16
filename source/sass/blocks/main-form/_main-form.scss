@@ -37,7 +37,7 @@
 
 .main-form__field {
   padding: 12px 15px;
-  border: 1px solid rgba(205,205,205,.5);
+  border: 1px solid rgba(205, 205, 205, 0.5);
   text-transform: uppercase;
 
   &--name {
@@ -123,9 +123,9 @@
 
 .main-form__email {
   width: 219px;
-  padding-right: 35px;
   padding: 12px 15px;
-  border: 1px solid rgba(205,205,205,.5);
+  padding-right: 35px;
+  border: 1px solid rgba(205, 205, 205, 0.5);
   text-transform: uppercase;
 
   &--error + .main-form__icon-email {
@@ -430,7 +430,7 @@
     margin-bottom: -6px;
   }
 
-  .main-form__radio-wrap  {
+  .main-form__radio-wrap {
     margin-top: 33px;
     margin-left: 87px;
   }
@@ -493,8 +493,6 @@
   }
 
   .main-form__required {
-    right: 419px
+    right: 419px;
   }
 }
-
-
