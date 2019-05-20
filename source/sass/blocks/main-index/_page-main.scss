@@ -4,13 +4,51 @@
   font-size: 36px;
   line-height: 60px;
   font-weight: normal;
+  margin-top: 18px;
+  margin-left: 20px;
 }
 
 .page-main__subtitle {
   @include font-oswald;
+  width: 230px;
   color: #111111;
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
   text-transform: uppercase;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    position: relative;
+  }
+
+  .page-main__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-left: 30px;
+    margin-top: 56px;
+    margin-bottom: 55px;
+  }
+
+  .page-main__subtitle {
+    font-size: 20px;
+    line-height: 30px;
+    width: 330px;
+    margin-left: 70px;
+    margin-bottom: 66px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__title {
+    margin-left: 40px;
+    margin-top: 73px;
+  }
+
+  .page-main__subtitle {
+    margin-left: 40px;
+  }
 }

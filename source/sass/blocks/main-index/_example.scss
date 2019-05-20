@@ -11,7 +11,7 @@
   line-height: 60px;
   margin-left: 20px;
   margin-right: 20px;
-  padding-top: 17px;
+  padding-top: 19px;
   margin-bottom: 24px;
 }
 
@@ -78,7 +78,7 @@
 .example__buttons {
   position: relative;
   margin-left: 63px;
-  padding-bottom: 72px;
+  padding-bottom: 35px;
 
   &::before {
     content: "";
@@ -124,7 +124,7 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 59%, #f2f2f2 59%, #f2f2f2 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 56%, #f2f2f2 56%, #f2f2f2 100%);
   }
 
   .example__title {
@@ -148,6 +148,10 @@
     margin-right: 30px;
     margin-bottom: 85px;
     justify-content: normal;
+  }
+
+  .example__buttons {
+    padding-bottom: 72px;
   }
 
   .example__result {
