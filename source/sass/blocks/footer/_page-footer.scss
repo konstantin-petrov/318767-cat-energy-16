@@ -2,6 +2,14 @@
   background-color: $bg-grey;
 }
 
+.page-footer__wrapper-contacts {
+  background-color: $bg-grey;
+
+  &--white {
+    background-color: #ffffff;
+  }
+}
+
 .page-footer__logo {
   display: block;
   padding-top: 38px;
