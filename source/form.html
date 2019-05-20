@@ -51,70 +51,82 @@
       <h1 class="page-main__title">Подбор программы</h1>
       <p class="page-main__subtitle">Заполните анкету и мы подберем программу питания для вашего кота</p>
       <form class="page-main__form main-form" action="https://echo.htmlacademy.ru/" method="GET">
-        <fieldset class="main-form__fieldset">
-          <p class="main-form__input-wrap">
-            <label class="main-form__label" for="name">Имя:*</label>
-            <input class="main-form__field" type="text" id="name" name="name" value="БАРСИК" required>
-          </p>
-          <p class="main-form__input-wrap">
-            <label class="main-form__label" for="weight">Вес (кг):*</label>
-            <input class="main-form__field" type="text" id="weight" name="weight" value="7" required>
-          </p>
-          <p class="main-form__input-wrap">
-            <label class="main-form__label" for="age">Возраст (лет):*</label>
-            <input class="main-form__field" type="text" id="age" name="age" value="7">
-          </p>
-        </fieldset>
-        <fieldset class="main-form__fieldset">
-          <p class="main-form__radio-wrap">
-            <input class="main-form__radio" type="radio" id="lose-weight" name="purpose" value="lose-weight">
-            <label class="main-form__label" for="lose-weight">Похудение</label>
-          </p>
-          <p class="main-form__radio-wrap">
-            <input class="main-form__radio" type="radio" id="weight-gain" name="purpose" value="gain-weight">
-            <label class="main-form__label" for="weight-gain">Набор массы</label>
-          </p>
-          <p class="main-form__radio-wrap">
-            <input class="main-form__radio" type="radio" id="dont-know" name="purpose" value="dont-know">
-            <label class="main-form__label" for="dont-know">Не знаю (нужен ваш совет)</label>
-          </p>
-        </fieldset>
+        <div class="main-form__flex-wrap-basic">
+          <fieldset class="main-form__fieldset main-form__basic-information">
+            <p class="main-form__input-wrap">
+              <label class="main-form__label" for="name">Имя:*</label>
+              <input class="main-form__field main-form__field--name" type="text" id="name" name="name" placeholder="Барсик" required>
+            </p>
+            <p class="main-form__input-wrap">
+              <label class="main-form__label" for="weight">Вес (кг):*</label>
+              <input class="main-form__field main-form__field--weight" type="text" id="weight" name="weight" placeholder="7" required>
+            </p>
+            <p class="main-form__input-wrap">
+              <label class="main-form__label" for="age">Возраст (лет):*</label>
+              <input class="main-form__field main-form__field--age" type="text" id="age" name="age" placeholder="7">
+            </p>
+          </fieldset>
+          <fieldset class="main-form__fieldset main-form__porpose">
+            <p class="main-form__radio-wrap">
+              <input class="visually-hidden main-form__radio" type="radio" id="lose-weight" name="purpose" value="lose-weight">
+              <label class="main-form__label" for="lose-weight">Похудение</label>
+            </p>
+            <p class="main-form__radio-wrap">
+              <input class="visually-hidden main-form__radio" type="radio" id="weight-gain" name="purpose" value="gain-weight">
+              <label class="main-form__label" for="weight-gain">Набор массы</label>
+            </p>
+            <p class="main-form__radio-wrap">
+              <input class="visually-hidden main-form__radio" type="radio" id="dont-know" name="purpose" value="dont-know">
+              <label class="main-form__label" for="dont-know">Не знаю (нужен ваш совет)</label>
+            </p>
+          </fieldset>
+        </div>
         <fieldset class="main-form__fieldset">
           <legend class="main-form__legend">Контактные данные (владельца кота)</legend>
-          <p class="main-form__input-wrap">
-            <label class="main-form__label" for="name">E-mail:*</label>
-            <input class="main-form__email" type="email" id="email" name="email" value="KUKLACHEV@GMAIL.COM" required>
-          </p>
-          <p class="main-form__input-wrap">
-            <label class="main-form__label" for="phone">Телефон:*</label>
-            <input class="main-form__tel" type="tel" id="phone" name="phone" value="8 (960) 900-60-90" required>
-          </p>
+          <div class="main-form__flex-wrap-contacts">
+            <p class="main-form__input-wrap main-form__contacts">
+              <label class="main-form__label" for="name">E-mail:*</label>
+              <input class="main-form__email" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+              <svg class="main-form__icon-email" role="img" width="18" height="14">
+                <use xlink:href="#icon-mail"></use>
+              </svg>
+            </p>
+            <p class="main-form__input-wrap main-form__contacts">
+              <label class="main-form__label" for="phone">Телефон:*</label>
+              <input class="main-form__tel" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+              <svg class="main-form__icon-phone" role="img" width="21" height="21">
+                <use xlink:href="#icon-phone"></use>
+              </svg>
+            </p>
+          </div>
         </fieldset>
-        <fieldset class="main-form__fieldset">
+        <fieldset class="main-form__fieldset main-form__coment">
           <legend class="main-form__legend">Комментарий</legend>
-          <p class="main-form__input-wrap">
+          <p class="main-form__comment-wrap">
             <label class="visually-hidden" for="comment">Комментарий</label>
-            <textarea class="main-form__textarea" id="comment" name="comment" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
+            <textarea class="main-form__textarea" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </p>
         </fieldset>
-        <fieldset class="main-form__fieldset">
-          <legend class="main-form__legend">Дополнительно</legend>
-          <p class="main-form__checkbox-wrap">
-            <input class="main-form__checkbox" type="checkbox" id="sugar" name="sugar" checked>
-            <label class="main-form__label" for="sugar">Сахарозаменитель</label>
-          </p>
-          <p class="main-form__checkbox-wrap">
-            <input class="main-form__checkbox" type="checkbox" id="water" name="water">
-            <label class="main-form__label" for="water">Питьевая вода</label>
-          </p>
-          <p class="main-form__checkbox-wrap">
-            <input class="main-form__checkbox" type="checkbox" id="milk" name="milk">
-            <label class="main-form__label" for="milk">Молоко</label>
-          </p>
-          <p class="main-form__checkbox-wrap">
-            <input class="main-form__checkbox" type="checkbox" id="vitamins" name="vitamins">
-            <label class="main-form__label" for="vitamins">Витамины</label>
-          </p>
+        <fieldset class="main-form__fieldset main-form__extra">
+          <legend class="main-form__legend main-form__legend-extra">Дополнительно</legend>
+          <div class="main-form__flex-wrap">
+            <p class="main-form__checkbox-wrap">
+              <input class="visually-hidden main-form__checkbox" type="checkbox" id="sugar" name="sugar" checked>
+              <label class="main-form__label-checkbox" for="sugar">Сахарозаменитель</label>
+            </p>
+            <p class="main-form__checkbox-wrap">
+              <input class="visually-hidden main-form__checkbox" type="checkbox" id="water" name="water">
+              <label class="main-form__label-checkbox" for="water">Питьевая вода</label>
+            </p>
+            <p class="main-form__checkbox-wrap">
+              <input class="visually-hidden main-form__checkbox" type="checkbox" id="milk" name="milk">
+              <label class="main-form__label-checkbox" for="milk">Молоко</label>
+            </p>
+            <p class="main-form__checkbox-wrap">
+              <input class="visually-hidden main-form__checkbox" type="checkbox" id="vitamins" name="vitamins">
+              <label class="main-form__label-checkbox" for="vitamins">Витамины</label>
+            </p>
+          </div>
         </fieldset>
         <input type="submit" value="Отправиль заявку" class="main-form__submit button">
       </form>
@@ -124,9 +136,9 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="page-footer__wrapper-contacts">
         <section class="contacts">
-          <p class="contacts__partnership">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__partnership">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
           <p class="contacts__address">
             <span>ул. Большая Конюшенная, д. 19/8</span>
             <span>Санкт-Петербург</span>
@@ -138,7 +150,9 @@
         <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
         <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="360" alt="Магазин на карте">
       </picture> -->
-      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5c1edb63d2b95692c8137833386d2a16094e35c3d788846ba0853cd9f3bd1186&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+      <div class="contacts__iframe-wrap">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5c1edb63d2b95692c8137833386d2a16094e35c3d788846ba0853cd9f3bd1186&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+      </div>
       <div class="page-footer__wrapper">
         <div class="container">
           <a href="index.html" class="page-footer__logo">

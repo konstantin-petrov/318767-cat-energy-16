@@ -1,14 +1,10 @@
-.page-footer {
-  // background-color: $bg-grey;
-}
-
 .page-footer__wrapper {
   background-color: $bg-grey;
 }
 
 .page-footer__logo {
   display: block;
-  padding-top: 46px;
+  padding-top: 38px;
   margin-bottom: 32px;
 
   &:hover {
@@ -25,11 +21,6 @@
   margin: 0 auto;
 }
 
-.page-footer__socials {
-  // width: 320px;
-  // margin: 0 auto;
-}
-
 .footer-socials__list {
   @include list-reset;
   width: 280px;
@@ -38,7 +29,7 @@
   justify-content: center;
   align-items: center;
   padding-top: 20px;
-  padding-bottom: 23px;
+  padding-bottom: 19px;
   border-top: 1px solid #dadada;
   border-bottom: 1px solid #dadada;
 }
@@ -48,7 +39,7 @@
 }
 
 .footer-socials__item:last-child {
-  margin-right: 0;
+  margin-right: 10px;
 }
 
 .footer-socials__icon {
@@ -103,21 +94,26 @@
 @media (min-width: $tablet-width) {
   .page-footer__wrapper .container {
     display: flex;
-    // width: $tablet-width;
-    // margin: 0 auto;
     padding-left: 30px;
     padding-right: 30px;
     min-height: 150px;
     align-items: center;
   }
 
-  .page-footer__wrapper .contacts {
+  .page-footer__wrapper-contacts .contacts {
     padding: 60px 70px;
+  }
+
+  .page-footer__wrapper-contacts {
+    background-color: $bg-grey;
+
+    &--white {
+      background-color: #ffffff;
+    }
   }
 
   .page-footer__logo {
     width: 132px;
-    // outline: 1px solid green;
     margin: 0;
     padding: 0;
   }
@@ -127,21 +123,22 @@
   }
 
   .page-footer__socials {
-    // width: 324px;
     margin-left: 74px;
-    // outline: 1px solid blue;
   }
 
   .footer-socials__list {
     border: none;
-    // margin: 0;
     padding: 0;
   }
 
   .footer-socials__item {
     margin: 0;
     padding: 0;
-    margin-right: 40px;
+    margin-right: 30px;
+  }
+
+  .footer-socials__item:last-child {
+    margin-right: 0;
   }
 
   .footer-socials__icon {
@@ -163,27 +160,40 @@
 
   .page-footer__copyright {
     width: 162px;
-    // outline: 1px solid yellow;
     margin: 0;
     padding: 0;
     margin-left: auto;
+    margin-top: -8px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-footer {
+  .page-footer__wrapper-contacts {
+    width: 1300px;
     position: relative;
+    margin: 0 auto;
+  }
+
+  .page-footer__wrapper-contacts .contacts {
+    padding: 60px 70px;
   }
 
   .page-footer__wrapper .container {
     padding-left: 40px;
     padding-right: 40px;
-    // outline: 1px solid blue;
     justify-content: space-between;
   }
 
   .page-footer__socials {
     margin: 0;
+  }
+
+  .footer-socials__item {
+    margin-right: 28px;
+  }
+
+  .footer-socials__item:last-child {
+    margin-right: -14px;
   }
 
   .page-footer__copyright {
