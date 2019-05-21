@@ -7,18 +7,36 @@
 }
 
 .main-form__legend {
+  display: inline-block;
+  position: relative;
   color: #111111;
   font-size: 24px;
   line-height: 24px;
   text-transform: none;
   margin-bottom: 34px;
+  max-width: 201px;
+  padding-right: 20px;
+
+  &::after {
+    background-color: #68b738;
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 100%;
+    width: 2000%;
+    height: 3px;
+  }
 }
 
 .main-form__required {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  color: #444444;
   display: block;
   line-height: 16px;
   text-align: center;
   margin-bottom: 32px;
+  text-transform: none;
 }
 
 .main-form__fieldset {
@@ -270,6 +288,7 @@
   }
 
   .main-form__fieldset {
+    position: relative;
     padding-left: 70px;
   }
 
@@ -312,6 +331,23 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 77px;
+    max-width: 700px;
+    padding-right: 40px;
+
+    &::before {
+      content: "";
+      background-color: #68b738;
+      position: absolute;
+      top: 22px;
+      left: calc(-1000% + -40px);
+      width: 1000%;
+      height: 3px;
+    }
+
+    &::after {
+      top: 22px;
+      left: 100%;
+    }
   }
 
   .main-form__email {

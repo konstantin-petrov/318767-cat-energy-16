@@ -22,11 +22,16 @@
 }
 
 .contacts__map {
-  display: block;
-  margin: 0 auto;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -160px;
+  padding: 0;
 }
 
-.contacts__iframe-wrap {
+.contacts__map-wrap {
+  position: relative;
   height: 370px;
 }
 
@@ -60,9 +65,10 @@
 
   .contacts__map {
     width: 768px;
+    margin-left: -384px;
   }
 
-  .contacts__iframe-wrap {
+  .contacts__map-wrap {
     height: 400px;
   }
 }
@@ -71,7 +77,6 @@
   .contacts {
     position: absolute;
     width: 570px;
-    // min-height: 201px;
     top: 95px;
     left: 40px;
     z-index: 1;
@@ -94,5 +99,6 @@
 
   .contacts__map {
     width: 1440px;
+    margin-left: -720px;
   }
 }

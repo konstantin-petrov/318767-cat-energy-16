@@ -1,9 +1,14 @@
 .first-screen {
-  background: no-repeat url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, #64a83b 0%, #64a83b 60%, #ffffff 60%, #ffffff 100%);
+  background: linear-gradient(to bottom, #64a83b 0%, #64a83b 60%, #ffffff 60%, #ffffff 100%);
+  background-repeat: no-repeat;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 
   @include font-oswald;
-  // width: 320px;
-  // margin: 0 auto;
 }
 
 .first-screen__wrapper {
