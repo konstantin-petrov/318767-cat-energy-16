@@ -6,6 +6,10 @@
   // margin: 0 auto;
 }
 
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  background-image: url("../img/index-background-mobile@2x.jpg");
+}
+
 .first-screen__wrapper {
   margin: 0 20px;
 }

@@ -129,10 +129,8 @@
           </div>
         </fieldset>
         <input type="submit" value="Отправиль заявку" class="main-form__submit button">
+        <span class="main-form__required">* — Обязательные поля</span>
       </form>
-      <span class="main-form__required">* — Обязательные поля</span>
-
-
     </main>
 
     <footer class="page-footer">
@@ -145,13 +143,13 @@
           </p>
         </section>
       </div>
-      <!-- <picture>
-        <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png">
-        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
-        <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="360" alt="Магазин на карте">
-      </picture> -->
-      <div class="contacts__iframe-wrap">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5c1edb63d2b95692c8137833386d2a16094e35c3d788846ba0853cd9f3bd1186&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+      <div class="contacts__map-wrap">
+        <iframe class="contacts__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A5c1edb63d2b95692c8137833386d2a16094e35c3d788846ba0853cd9f3bd1186&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
+          <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="360" alt="Магазин на карте">
+        </picture>
       </div>
       <div class="page-footer__wrapper">
         <div class="container">
