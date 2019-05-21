@@ -17,7 +17,7 @@
   max-width: 201px;
   padding-right: 20px;
 
-  &:after {
+  &::after {
     background-color: #68b738;
     content: "";
     position: absolute;
@@ -334,7 +334,7 @@
     max-width: 700px;
     padding-right: 40px;
 
-    &:before {
+    &::before {
       content: "";
       background-color: #68b738;
       position: absolute;
@@ -344,9 +344,9 @@
       height: 3px;
     }
 
-    &:after {
+    &::after {
       top: 22px;
-      left: 100%
+      left: 100%;
     }
   }
 
