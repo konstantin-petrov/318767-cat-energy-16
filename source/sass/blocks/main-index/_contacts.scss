@@ -63,6 +63,12 @@
     margin-bottom: 22px;
   }
 
+  .contacts__map-wrap iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
   .contacts__map {
     width: 768px;
     margin-left: -384px;
