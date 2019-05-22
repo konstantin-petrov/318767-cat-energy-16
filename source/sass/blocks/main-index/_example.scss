@@ -77,20 +77,11 @@
 
 .example__buttons {
   position: relative;
-  margin-left: 63px;
+  margin: 0 auto;
   padding-bottom: 35px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 61px;
-    top: 6px;
-    width: 35px;
-    height: 6px;
-    border-radius: 3px;
-    background-color: #68b738;
-    z-index: 2;
-  }
+  display: flex;
+  justify-content: space-between;
+  width: 195px;
 
   &::after {
     content: "";
@@ -98,7 +89,7 @@
     left: 55px;
     top: 3px;
     width: 82px;
-    height: 12px;
+    height: 13px;
     border-radius: 6px;
     border: solid 1px #cdcdcd;
     background-color: #ffffff;
@@ -116,10 +107,19 @@
   background: transparent;
   margin: 0;
   padding: 0;
+}
 
-  &--before {
-    margin-right: 116px;
-  }
+.example__control {
+  position: absolute;
+  top: 7px;
+  left: 60px;
+  width: 35px;
+  height: 6px;
+  border-radius: 3px;
+  border: none;
+  background-color: #68b738;
+  z-index: 2;
+  outline: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -192,64 +192,56 @@
 
   .example__button {
     font-size: 20px;
-    margin-left: 35px;
-
-    &--before {
-      margin-right: 434px;
-    }
   }
 
   .example__buttons {
+    width: 568px;
     padding-bottom: 72px;
-
-    &::before {
-      content: "";
-      background-color: #ffffff;
-      top: -6px;
-      left: 304px;
-      width: 34px;
-      height: 34px;
-      border: 1px solid #cdcdcd;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-      border-radius: 50%;
-    }
 
     &::after {
       content: "";
       position: absolute;
+      width: 428px;
+      height: 6px;
+      background-color: #dcdcdc;
+      border: 1px solid #dcdcdc;
+      border-radius: 2.5px;
+      top: 5px;
+      left: 68px;
+    }
+  }
+
+  .example__control {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    top: -8px;
+    left: 266px;
+    box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+
+    &::after {
+      position: absolute;
+      content: "";
       width: 8px;
       height: 8px;
-      top: 7px;
-      left: 317px;
-      border: 4px solid #68b738;
+      border-radius: 50%;
+      background-color: #68b738;
+      top: 39%;
+      left: 39%;
       z-index: 2;
     }
 
-    .example__button--before {
-      &::after {
-        content: "";
-        position: absolute;
-        width: 428px;
-        height: 6px;
-        background-color: #dcdcdc;
-        border: 1px solid #dcdcdc;
-        border-radius: 2.5px;
-        top: 8px;
-        left: 106px;
-      }
+    &:hover {
+      box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      box-shadow: 0px 4px 5px 0 rgba(0, 0, 0, 0.3);
+      border: 2px solid#68b738;
     }
   }
-}
-
-.example__buttons:hover::before {
-  cursor: pointer;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
-}
-
-.example__buttons:active::before {
-  cursor: pointer;
-  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
-  border: 2px solid #68b738;
 }
 
 @media (min-width: $desktop-width) {
