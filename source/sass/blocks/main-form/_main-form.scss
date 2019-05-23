@@ -131,6 +131,11 @@
   opacity: 0.3;
 }
 
+.main-form__radio:disabled + .main-form__label::before {
+  border: 3px solid black;
+  background-color: rgb(138, 138, 138);
+}
+
 .main-form__contacts {
   position: relative;
 }
@@ -258,6 +263,10 @@
 
 .main-form__checkbox:active + .main-form__label-checkbox {
   opacity: 0.3;
+}
+
+.main-form__checkbox:disabled + .main-form__label-checkbox::before {
+  background-color: rgb(138, 138, 138);
 }
 
 .main-form__extra {
