@@ -198,6 +198,7 @@
     margin: 0 auto;
     min-height: 200px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-color: $green;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/gift-photo-tablet@2x.jpg");
