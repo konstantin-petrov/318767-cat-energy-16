@@ -107,6 +107,17 @@
   background: transparent;
   margin: 0;
   padding: 0;
+  padding-bottom: 5px;
+  border-bottom: 1px dotted #949b94;
+
+  &:hover {
+    border-bottom: 1px solid #949b94;
+    cursor: pointer;
+  }
+
+  &:active {
+    border: none;
+  }
 }
 
 .example__control {
