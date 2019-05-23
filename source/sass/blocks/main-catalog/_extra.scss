@@ -4,8 +4,22 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: normal;
-  margin-left: 20px;
+  padding-left: 20px;
+  margin-top: 0;
   margin-bottom: 31px;
+  padding-right: 20px;
+  display: inline-block;
+  position: relative;
+
+  &::after {
+    background-color: #68b738;
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 100%;
+    width: 2000%;
+    height: 3px;
+  }
 }
 
 .extra__list {
@@ -99,11 +113,28 @@
   }
 
   .extra__title {
+    position: relative;
     font-size: 36px;
     line-height: 36px;
     padding-top: 16px;
-    padding-left: 47px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 40px;
     margin-bottom: 80px;
+
+    &::before {
+      content: "";
+      background-color: #68b738;
+      position: absolute;
+      top: 38px;
+      left: calc(-1000% + -12px);
+      width: 1000%;
+      height: 3px;
+    }
+
+    &::after {
+      top: 38px;
+    }
   }
 
   .extra__list {
@@ -167,6 +198,7 @@
     margin: 0 auto;
     min-height: 200px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-color: $green;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/gift-photo-tablet@2x.jpg");
@@ -196,7 +228,10 @@
   }
 
   .extra__title {
-    padding-left: 19px;
+    padding-left: 25px;
+    padding-right: 38px;
+    margin-top: 30px;
+    margin-left: 13px;
   }
 
   .extra__list {

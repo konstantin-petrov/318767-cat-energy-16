@@ -5,6 +5,10 @@
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff" as="font">
   </head>
   <body>
     <div style="display:none">
@@ -37,7 +41,13 @@
           <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип Cat Energy">
         </picture>
       </a>
-      <nav class="main-nav">
+
+      <!--
+      класс main-nav--opened для открытого меню
+      класс main-nav--closed для закрытого меню
+      класс main-nav--nojs при выключенном javascript
+      -->
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a href="index.html">Главная</a></li>
@@ -143,12 +153,15 @@
           </p>
         </section>
       </div>
-      <div class="contacts__map-wrap">
-        <iframe class="contacts__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A5c1edb63d2b95692c8137833386d2a16094e35c3d788846ba0853cd9f3bd1186&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+      <div class="page-footer__map footer-map">
+        <iframe class="footer-map__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A5c1edb63d2b95692c8137833386d2a16094e35c3d788846ba0853cd9f3bd1186&amp;source=constructor"></iframe>
         <picture>
+          <source type="image/webp" media="(min-width: 1300px)" srcset="img/webp/bg-map-desktop@1x.webp 1x, img/webp/bg-map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/bg-map-tablet@1x.webp 1x, img/webp/bg-map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/webp/bg-map-mobile@1x.webp 1x, img/webp/bg-map-mobile@2x.webp 2x">
           <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png">
           <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
-          <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="360" alt="Магазин на карте">
+          <img class="footer-map__img" src="img/bg-map-mobile@1x.png" width="320" height="360" alt="Магазин на карте">
         </picture>
       </div>
       <div class="page-footer__wrapper">

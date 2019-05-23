@@ -131,6 +131,11 @@
   opacity: 0.3;
 }
 
+.main-form__radio:disabled + .main-form__label::before {
+  border: 3px solid black;
+  background-color: rgb(138, 138, 138);
+}
+
 .main-form__contacts {
   position: relative;
 }
@@ -249,6 +254,19 @@
   height: 17px;
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
+}
+
+.main-form__checkbox:hover + .main-form__label-checkbox::before,
+.main-form__checkbox:focus + .main-form__label-checkbox::before {
+  border: 1px solid #bababa;
+}
+
+.main-form__checkbox:active + .main-form__label-checkbox {
+  opacity: 0.3;
+}
+
+.main-form__checkbox:disabled + .main-form__label-checkbox::before {
+  background-color: rgb(138, 138, 138);
 }
 
 .main-form__extra {
@@ -487,6 +505,7 @@
 
   .main-form__flex-wrap-contacts {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 10px;
   }

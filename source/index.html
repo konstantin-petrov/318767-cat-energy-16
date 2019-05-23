@@ -5,6 +5,10 @@
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff" as="font">
   </head>
   <body>
     <div style="display:none">
@@ -37,6 +41,12 @@
           <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип Cat Energy">
         </picture>
       </a>
+
+      <!--
+      класс main-nav--opened для открытого меню
+      класс main-nav--closed для закрытого меню
+      класс main-nav--nojs при выключенном javascript
+      -->
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list main-nav__list--index site-list">
@@ -53,6 +63,9 @@
           <h1 class="first-screen__title">Функциональное питание для котов</h1>
           <b class="first-screen__slogan">Занялся собой? Займись котом!</b>
           <picture>
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/webp/index-can-desktop@1x.webp 1x, img/webp/index-can-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/index-can-tablet@1x.webp 1x, img/webp/index-can-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/webp/index-can-mobile@1x.webp 1x, img/webp/index-can-mobile@2x.webp 2x">
             <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
             <img class="first-screen__img-product" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="270" alt="Изображение продукта">
@@ -102,27 +115,35 @@
 
       <section class="example">
         <div class="container">
-          <h2 class="example__title">Живой пример</h2>
-          <p class="example__story">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <div class="example__flex-wrap">
-            <div class="example__result example-result">
-              <b class="example-result__value">5 кг</b>
-              <span class="example-result__description">снижение веса</span>
+          <div class="example__description-wrap">
+            <h2 class="example__title">Живой пример</h2>
+            <p class="example__story">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <div class="example__flex-wrap">
+              <div class="example__result example-result">
+                <b class="example-result__value">5 кг</b>
+                <span class="example-result__description">снижение веса</span>
+              </div>
+              <div class="example__result example-result">
+                <b class="example-result__value">60 дней</b>
+                <span class="example-result__description">затрачено времени</span>
+              </div>
+              <p class="example__cost"><span>Затраты на питание: </span><span>15 000 руб.</span></p>
             </div>
-            <div class="example__result example-result">
-              <b class="example-result__value">60 дней</b>
-              <span class="example-result__description">затрачено времени</span>
-            </div>
-            <p class="example__cost"><span>Затраты на питание: </span><span>15 000 руб.</span></p>
           </div>
-          <picture>
-            <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-            <img class="example__cat-img" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Изображение кота до/после">
-          </picture>
-          <div class="example__buttons">
-            <button class="example__button example__button--before">Было</button>
-            <button class="example__button example__button--after">Стало</button>
+          <div class="example__cat-slider-wrap">
+            <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/webp/before-desktop@1x.webp 1x, img/webp/before-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/before-tablet@1x.webp 1x, img/webp/before-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/webp/before-mobile@1x.webp 1x, img/webp/before-mobile@2x.webp 2x">
+              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+              <img class="example__cat-img" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Изображение кота до/после">
+            </picture>
+            <div class="example__buttons">
+              <button class="example__button example__button--before">Было</button>
+              <button class="example__control" aria-label="Контрол на слайдере"></button>
+              <button class="example__button example__button--after">Стало</button>
+            </div>
           </div>
         </div>
       </section>
@@ -138,12 +159,15 @@
           </p>
         </section>
       </div>
-      <div class="contacts__map-wrap">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5c1edb63d2b95692c8137833386d2a16094e35c3d788846ba0853cd9f3bd1186&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+      <div class="page-footer__map footer-map">
+        <iframe class="footer-map__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A5c1edb63d2b95692c8137833386d2a16094e35c3d788846ba0853cd9f3bd1186&amp;source=constructor"></iframe>
         <picture>
+          <source type="image/webp" media="(min-width: 1300px)" srcset="img/webp/bg-map-desktop@1x.webp 1x, img/webp/bg-map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/bg-map-tablet@1x.webp 1x, img/webp/bg-map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/webp/bg-map-mobile@1x.webp 1x, img/webp/bg-map-mobile@2x.webp 2x">
           <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png">
           <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
-          <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="360" alt="Магазин на карте">
+          <img class="footer-map__img" src="img/bg-map-mobile@1x.png" width="320" height="360" alt="Магазин на карте">
         </picture>
       </div>
       <div class="page-footer__wrapper">
