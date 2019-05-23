@@ -37,7 +37,13 @@
           <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип Cat Energy">
         </picture>
       </a>
-      <nav class="main-nav">
+
+      <!--
+      класс main-nav--opened для открытого меню
+      класс main-nav--closed для закрытого меню
+      класс main-nav--nojs при выключенном javascript
+      -->
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a href="index.html">Главная</a></li>
