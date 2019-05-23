@@ -505,6 +505,7 @@
 
   .main-form__flex-wrap-contacts {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 10px;
   }
