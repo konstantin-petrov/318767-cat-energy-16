@@ -1,7 +1,6 @@
 .first-screen {
-  background: linear-gradient(to bottom, #64a83b 0%, #64a83b 60%, #ffffff 60%, #ffffff 100%);
-  background-repeat: no-repeat;
-  background-image: url("../img/index-background-mobile@1x.jpg");
+  background: url(../img/index-background-mobile@1x.jpg) no-repeat top center,
+              linear-gradient(to bottom,#64a83b 0,#64a83b 305px,#fff 305px,#fff 100%);
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/index-background-mobile@2x.jpg");
@@ -11,8 +10,16 @@
   @include font-oswald;
 }
 
-.first-screen__wrapper {
-  margin: 0 20px;
+@media (max-width: $mobile-width-only) {
+  .first-screen.container {
+    width: 100%;
+  }
+
+  .first-screen__wrapper {
+    padding: 0 20px;
+    width: 320px;
+    margin: 0 auto;
+  }
 }
 
 .first-screen__title {
