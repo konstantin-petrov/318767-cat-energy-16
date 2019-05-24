@@ -256,9 +256,12 @@
   background-repeat: no-repeat;
 }
 
-.main-form__checkbox:hover + .main-form__label-checkbox::before,
-.main-form__checkbox:focus + .main-form__label-checkbox::before {
+.main-form__checkbox:hover + .main-form__label-checkbox::before {
   border: 1px solid #bababa;
+}
+
+.main-form__checkbox:focus + .main-form__label-checkbox::before {
+  outline: 1px solid #bababa;
 }
 
 .main-form__checkbox:active + .main-form__label-checkbox {
