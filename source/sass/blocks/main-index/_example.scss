@@ -202,6 +202,10 @@
 
   .example__button {
     font-size: 20px;
+
+    &:active {
+      border-bottom: 1px solid transparent;
+    }
   }
 
   .example__buttons {
@@ -238,8 +242,8 @@
       height: 8px;
       border-radius: 50%;
       background-color: #68b738;
-      top: 39%;
-      left: 39%;
+      top: 13px;
+      left: 13px;
       z-index: 2;
     }
 
@@ -250,6 +254,11 @@
     &:active {
       box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
       border: 2px solid#68b738;
+
+      &::after {
+        top: 11px;
+        left: 11px;
+      }
     }
   }
 }
@@ -274,6 +283,15 @@
 
   .example__buttons {
     margin-left: 80px;
+  }
+
+  .example__control {
+
+
+    &:active {
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+      border: 2px solid #68b738;
+    }
   }
 
   .example__title {
