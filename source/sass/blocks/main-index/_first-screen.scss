@@ -2,7 +2,7 @@
   background: url("../img/index-background-mobile@1x.jpg") no-repeat top center, linear-gradient(to bottom, #64a83b 0, #64a83b 305px, #ffffff 305px, #ffffff 100%);
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/index-background-mobile@2x.jpg");
+    background: url("../img/index-background-mobile@2x.jpg") no-repeat top center, linear-gradient(to bottom, #64a83b 0, #64a83b 305px, #ffffff 305px, #ffffff 100%);
     background-size: 320px auto;
   }
 
